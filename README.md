@@ -1,24 +1,15 @@
-# myblog
+# blog
 
-## Project setup
-```
-npm install
-```
+## 技术栈
+*  前端 Vue + vue-router + element-ui，使用TypeScript语言编写
+*  后端 nodejs + mysql
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+因为项目比较小，没有使用vuex，需要的全局数据用类封装了（这种方案亦能达到状态管理的效果，原理是使用类的get实现，get的值改变也能触发vue视图相应的更新）
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 简介
+个人毕业设计做的项目，参考了很多商业博客网站，基本功能都已经实现，markdown编辑器、后台管理、搜索、评论。
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 待完成
+* 评论点赞功能，因为考虑到热数据可能需要redis,又自己懒得弄redis。但是设计方案已*经想好：个人点赞记录置入个人信息，这样用户的删除不会影响评论点赞总数量。
+* 文章更好看的css样式设计，因为该博客总的也才十几天就匆匆答辩了，样式几乎没有润色。
+* 还有更多？....
